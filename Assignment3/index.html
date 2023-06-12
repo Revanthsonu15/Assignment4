@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website - Home</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>HI Welcome to My Website</h1>
+		<nav>
+			<ul>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Hobby.html">Hobby</a></li>
+				<li><a href="Hometown.html">Hometown</a></li>
+				<li><a href="https://www.w3schools.com">w3schools</a></li>
+				<li><a href="https://www.linkedin.com">Linkedin</a></li>
+				<li><a href="GitHub.html">GitHub</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Home</h2>
+			<p>Hi, my name is Revanth, and I'm a Student. I created this website to share my interests and experiences with the world. Please take a look around.</p>
+		</section>
+		
+			
+		<section style="background-color: #f2f2f2; padding: 20px;">
+			<h2 style="color: #333;">Login</h2>
+			<form id="loginForm">
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username" required><br>
+				
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required><br>
+				
+				<button type="button" style="background-color: #4CAF50; color: white;" onclick="resetPassword()">Reset Password</button>
+				<button type="button" style="background-color: #f44336; color: white;" onclick="clearFields()">Clear</button>
+				<button type="submit" style="background-color: #008CBA; color: white;">Submit</button>
+			</form>
+		</section>
+	</main>
+	
+	<script>
+		function resetPassword() {
+			// Add your reset password functionality here
+			alert("Reset Password button clicked");
+		}
+		
+		function clearFields() {
+			// Add your clear fields functionality here
+			document.getElementById("loginForm").reset();
+		}
+	</script>
+</body>
+</html>
